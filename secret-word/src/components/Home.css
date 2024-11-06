@@ -1,0 +1,58 @@
+.home h1 {
+    font-size: 3.5em;
+    margin: 2em auto 1em auto;
+}
+
+
+
+.home p {
+    font-size: 1.3em;
+    margin-bottom: 1.8em;
+}
+
+button {
+    width: 10em;
+    position: relative;
+    height: 3.8em;
+    border: 3px ridge #275DAD;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #242424;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #242424;
+    transition: 0.5s;
+  }
+  
+  button:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  button:hover {
+    box-shadow: inset 0px 0px 25px #275DAD;
+  }
