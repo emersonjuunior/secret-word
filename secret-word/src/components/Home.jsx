@@ -3,9 +3,9 @@ import "./Home.css";
 const Home = ({ startGame }) => {
   return (
     <div className="home">
-      <h1>Secret Word</h1>
+      <h1 id="title-secret-word">Secret Word</h1>
       <p>Clique para iniciar o jogo!</p>
-      <button onClick={startGame}>Jogar</button>
+      <button onClick={startGame} id="start-button">Jogar</button>
       <div id="how-to-play">
         <div id="how-to-play-wrapper">
           <h3>Como Jogar?</h3>

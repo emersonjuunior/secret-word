@@ -84,12 +84,8 @@ input {
     outline: none;
 }
 
-#play-button {
-    border: 3px ridge #B33F62;
-}
-
 #play-button:hover {
-    box-shadow: inset 0px 0px 25px #B33F62;
+    box-shadow: inset 0px 0px 25px #275DAD;
   }
 
   #letters-used {

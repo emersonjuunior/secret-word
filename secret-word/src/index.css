@@ -14,10 +14,26 @@ body {
   background-color: #242424;
 }
 
+button {
+  width: 12em;
+  position: relative;
+  height: 4em;
+  border: 3px ridge #275DAD;
+  outline: none;
+  background-color: transparent;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 h2::after {
   content: "";
   display: block;
-  width: 110%;
+  width: 100%;
+  margin: 0 auto;
   height: 2px;
   background-color: #275DAD
 }
+

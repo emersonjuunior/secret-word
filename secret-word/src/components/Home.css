@@ -3,27 +3,63 @@
     margin: .5em auto 1em auto;
 }
 
+#title-secret-word::after {
+  display: block;
+  content: "";
+  background-color: #B33F62;
+  width: 340px;
+  margin: 0 auto;
+  height: 2px
+}
+
 .home p {
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-bottom: 1.8em;
 }
 
-button {
-    width: 10em;
-    position: relative;
-    height: 3.8em;
-    border: 3px ridge #275DAD;
-    outline: none;
-    background-color: transparent;
-    color: white;
-    transition: 1s;
-    border-radius: 0.3em;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
+  #start-button {
     margin-bottom: 4em;
   }
   
+
+  #how-to-play {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 100px;
+    border: 1px solid #5c5b5b;
+    width: 60vw;
+    height: 50vh;
+    background-image: url("./public/book.svg");
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 3%;
+  }
+
+  #how-to-play-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #how-to-play h3 {
+    font-size: 26px;
+    margin-bottom: 1em;
+    align-self: start;
+  }
+
+
+  #how-to-play p {
+    width: 30vw;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #how-to-play span {
+    color: #B33F62;
+    font-weight: 400;
+  }
+
   button::after {
     content: "";
     position: absolute;
@@ -54,44 +90,6 @@ button {
   
   button:hover {
     box-shadow: inset 0px 0px 25px #275DAD;
-  }
-
-  #how-to-play {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    padding: 100px;
-    border: 1px solid #F0F7EE;
-    border-radius: 10px;
-    width: 60vw;
-    height: 55vh;
-    background-image: url("./public/book.svg");
-    background-repeat: no-repeat;
-    background-size: 35%;
-    background-position: 1%;
-  }
-
-  #how-to-play-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #how-to-play h3 {
-    font-size: 26px;
-    margin-bottom: 1em;
-    align-self: start;
-  }
-
-
-  #how-to-play p {
-    width: 30vw;
-    text-align: left;
-  }
-
-  #how-to-play span {
-    color: #B33F62;
-    font-weight: 400;
   }
 
   
