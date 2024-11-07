@@ -96,3 +96,14 @@ input {
   .wrong-letters {
     font-size: 1.4em;
   }
+
+    /* RESPONSIVIDADE TABLET E CELULAR*/
+@media screen and (max-width: 900px) {
+    .word-container > span {
+        width: 70px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 4em;
+    }
+}
+

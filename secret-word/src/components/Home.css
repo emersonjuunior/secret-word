@@ -1,95 +1,123 @@
 .home h1 {
-    font-size: 3.5em;
-    margin: .5em auto 1em auto;
+  font-size: 3.5em;
+  margin: 0.5em auto 1em auto;
 }
 
 #title-secret-word::after {
   display: block;
   content: "";
-  background-color: #B33F62;
+  background-color: #b33f62;
   width: 340px;
   margin: 0 auto;
-  height: 2px
+  height: 2px;
 }
 
 .home p {
-    font-size: 1.4em;
-    margin-bottom: 1.8em;
+  font-size: 1.4em;
+  margin-bottom: 1.8em;
 }
 
-  #start-button {
-    margin-bottom: 4em;
-  }
-  
+#start-button {
+  margin-bottom: 4em;
+}
 
+#how-to-play {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 100px;
+  border: 1px solid #5c5b5b;
+  width: 60vw;
+  height: 50vh;
+  background-image: url("./public/book.svg");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: 3%;
+}
+
+#how-to-play-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#how-to-play h3 {
+  font-size: 26px;
+  margin-bottom: 1em;
+  align-self: start;
+}
+
+#how-to-play p {
+  width: 30vw;
+  text-align: left;
+  font-size: 20px;
+}
+
+#how-to-play span {
+  color: #b33f62;
+  font-weight: 400;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #242424;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #242424;
+  transition: 0.5s;
+}
+
+button:hover::before,
+button:hover::after {
+  transform: scale(0);
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 25px #275dad;
+}
+
+/* RESPONSIVIDADE TABLET*/
+@media screen and (max-width: 900px) and (min-width: 600px) {
   #how-to-play {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    padding: 100px;
-    border: 1px solid #5c5b5b;
-    width: 60vw;
-    height: 50vh;
-    background-image: url("./public/book.svg");
-    background-repeat: no-repeat;
-    background-size: 35%;
-    background-position: 3%;
+    width: 85vw;
+  }
+
+  #how-to-play p {
+    font-size: 17px;
+  }
+}
+
+/* RESPONSIVIDADE CELULAR */
+@media screen and (max-width: 600px) {
+  #how-to-play {
+    background-image: none;
+    width: 95vw;
+    height: 200px;
+    padding: 10px 10px 10px 25px;
+    justify-content: start;
   }
 
   #how-to-play-wrapper {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
-
-  #how-to-play h3 {
-    font-size: 26px;
-    margin-bottom: 1em;
-    align-self: start;
-  }
-
 
   #how-to-play p {
-    width: 30vw;
-    text-align: left;
-    font-size: 20px;
+    font-size: 12px;
+    width: 100%;
   }
-
-  #how-to-play span {
-    color: #B33F62;
-    font-weight: 400;
-  }
-
-  button::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: #242424;
-    transition: 0.5s;
-    transform-origin: center;
-  }
-  
-  button::before {
-    content: "";
-    transform-origin: center;
-    position: absolute;
-    top: 80%;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: #242424;
-    transition: 0.5s;
-  }
-  
-  button:hover::before, button:hover::after {
-    transform: scale(0)
-  }
-  
-  button:hover {
-    box-shadow: inset 0px 0px 25px #275DAD;
-  }
-
-  
+}
