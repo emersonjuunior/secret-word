@@ -1,0 +1,102 @@
+.game {
+    width: 100vw;
+    height: 100vh;
+}
+
+.points {
+    font-size: 1.4em;
+    margin: 2em auto 
+}
+
+.points span {
+    font-weight: bold;
+    color: #275DAD
+}
+
+#guess {
+    font-size: 2.5em;
+    margin-bottom: .6em;
+}
+
+.tip {
+    font-size: 1.4em;
+    margin-bottom: 1.2em;
+}
+
+.guesses {
+    margin-bottom: 2.6em;
+}
+
+#try {
+    font-weight: 500;
+}
+
+.tip span, #try {
+    color: #B33F62;
+}
+
+.word-container {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 350;
+    background-color: #f5f4f4;
+    border: 8px solid #275DAD;
+    border-radius: 5px;
+    margin-bottom: 3em;
+}
+
+.word-container > span {
+    width: 140px;
+    height: 150px;
+    line-height: 150px;
+    color: #242424;
+    font-size: 5em;
+    font-weight: 500;
+    border: 2px solid #242424;
+}
+
+.letter-container p {
+    font-size: 1.5em;
+    margin-bottom: 1.2em;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 3em;
+}
+
+input {
+    width: 50px;
+    height: 50px;
+    color: #242424;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    border: 2px solid #B33F62;
+    outline: none;
+}
+
+#play-button {
+    border: 3px ridge #B33F62;
+}
+
+#play-button:hover {
+    box-shadow: inset 0px 0px 25px #B33F62;
+  }
+
+  #letters-used {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+  }
+
+  .wrong-letters {
+    font-size: 1.4em;
+  }

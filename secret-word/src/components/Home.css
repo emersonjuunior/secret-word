@@ -1,9 +1,7 @@
 .home h1 {
     font-size: 3.5em;
-    margin: 2em auto 1em auto;
+    margin: .5em auto 1em auto;
 }
-
-
 
 .home p {
     font-size: 1.3em;
@@ -23,6 +21,7 @@ button {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    margin-bottom: 4em;
   }
   
   button::after {
@@ -56,3 +55,43 @@ button {
   button:hover {
     box-shadow: inset 0px 0px 25px #275DAD;
   }
+
+  #how-to-play {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 100px;
+    border: 1px solid #F0F7EE;
+    border-radius: 10px;
+    width: 60vw;
+    height: 55vh;
+    background-image: url("./public/book.svg");
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 1%;
+  }
+
+  #how-to-play-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #how-to-play h3 {
+    font-size: 26px;
+    margin-bottom: 1em;
+    align-self: start;
+  }
+
+
+  #how-to-play p {
+    width: 30vw;
+    text-align: left;
+  }
+
+  #how-to-play span {
+    color: #B33F62;
+    font-weight: 400;
+  }
+
+  

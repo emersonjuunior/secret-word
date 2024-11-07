@@ -13,3 +13,11 @@ body {
   height: 100vh;
   background-color: #242424;
 }
+
+h2::after {
+  content: "";
+  display: block;
+  width: 110%;
+  height: 2px;
+  background-color: #275DAD
+}

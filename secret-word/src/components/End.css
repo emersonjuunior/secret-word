@@ -1,0 +1,31 @@
+section {
+    display: flex;
+    width: 60vw;
+    height: 60vh;
+    margin-top: 8%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 100px;
+    background-image: url("./public/illustration.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: bottom right;
+    border: 2px solid #F0F7EE;
+    border-radius: 10px;
+}
+
+#game-over-title {
+    font-size: 3em;
+    margin-bottom: 1.4em;
+}
+
+section p {
+    font-size: 1.6em;
+    margin-bottom: 1.5em;
+}
+
+#game-over-score {
+    color: #B33F62;
+    font-weight: 500;
+}

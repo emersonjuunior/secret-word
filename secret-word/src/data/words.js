@@ -7,6 +7,6 @@ export const wordsList = {
     roupa: ["camisa", "calça", "sapato", "vestido", "meia", "saia", "blusa"],
     profissão: ["médico", "advogado", "engenheiro", "professor", "arquiteto", "dentista", "policial"],
     veículo: ["carro", "moto", "bicicleta", "ônibus", "trem", "avião", "navio"],
-     comida: ["pizza", "hambúrguer", "macarrão", "sushi", "sopa", "churrasco", "salada"],
+    comida: ["pizza", "hambúrguer", "macarrão", "sushi", "sopa", "churrasco", "salada"],
     bebida: ["água", "suco", "refrigerante", "café", "chá", "leite", "cerveja"]
 }
