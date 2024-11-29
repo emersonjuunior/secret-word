@@ -30,7 +30,7 @@
   border: 1px solid #5c5b5b;
   width: 60vw;
   height: 50vh;
-  background-image: url("./public/book.svg");
+  background-image: url("/book.svg");
   background-repeat: no-repeat;
   background-size: 35%;
   background-position: 3%;
